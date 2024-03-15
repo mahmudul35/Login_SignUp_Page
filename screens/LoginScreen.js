@@ -66,7 +66,10 @@ const LoginScreen = (props) => {
             entering={FadeInDown.delay(600).duration(1000).springify()}
             className="w-full"
           >
-            <TouchableOpacity className="w-full bg-sky-400 mb-4 rounded-2xl p-3">
+            <TouchableOpacity
+              onPress={() => navigation.navigate("home")}
+              className="w-full bg-sky-400 mb-4 rounded-2xl p-3"
+            >
               <Text className="text-xl font-bold text-white text-center">
                 Login
               </Text>
